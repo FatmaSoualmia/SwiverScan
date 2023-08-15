@@ -1,5 +1,4 @@
 import { useState } from 'react';
-//import { createContext } from 'react';
 import { Button, Container, Card, Row, Col } from 'react-bootstrap';
 import QrReader from 'react-qr-scanner';
 
@@ -7,14 +6,13 @@ import QrReader from 'react-qr-scanner';
 import Result from './Result';
 
 
-//export const DataContext= createContext(null) ;
 
 export default function Scan() {
   const [camera, setCamera] = useState('');
   const [delay, setDelay] = useState(100);
   const [data, setData] = useState({
     text: "some scanned text",
-    id: "what the f"
+    id: " "
   });
   const [scan, setScan] = useState('dont scan');
   const previewStyle = {
@@ -81,14 +79,11 @@ export default function Scan() {
         <Row className="justify-content-center my-3">
           <Col lg={6} md={8}>
             {data.text !== "some scanned text" && (
-             //<DataContext.Provider value={data} >
               <Card>
                 <Card.Body>
                   <h6>Results: <a href={data}>scanned</a></h6>
-                  <Result />
                 </Card.Body>
               </Card>
-             //</DataContext.Provider>
             )}
           </Col>
         </Row>
