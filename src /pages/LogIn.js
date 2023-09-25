@@ -1,7 +1,7 @@
 import { Form, redirect, useActionData } from "react-router-dom"
 
 //pages
-import HomePage from './HomePage.jpg'
+import HomePage from '../assets/HomePage.jpg'
 
 function LogIn() {
   const data = useActionData() 
@@ -53,4 +53,3 @@ export const LogInAction = async ({ request }) => {
   // redirect the user
   return redirect('/')
 }
-
