@@ -25,6 +25,12 @@ code {
   height: auto; /* Maintain aspect ratio */
 }
 
+ /*footer */
+ .spaceIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+ }
 
  /*logIn */
  .login-container {
@@ -33,3 +39,13 @@ code {
   border-radius: 4px;
   height: 450px;
  }
+.camera-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: none;
+}
+.camera {
+  width:fit-content;
+  margin: auto;
+}
