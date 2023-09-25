@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Button, Container, Card, Row, Col } from 'react-bootstrap';
 import QrReader from 'react-qr-scanner';
 
-//components
-import Result from './Result';
 
 
 
@@ -12,12 +10,12 @@ export default function Scan() {
   const [delay, setDelay] = useState(100);
   const [data, setData] = useState({
     text: "some scanned text",
-    id: " "
+    id: "what the f"
   });
   const [scan, setScan] = useState('dont scan');
   const previewStyle = {
     height: 240,
-    width: 320,
+    width: "100%",
   };
 
   function handleAppearScan() {
@@ -47,7 +45,7 @@ export default function Scan() {
   }
 
   return (
-    <div>
+    <div > 
       <Container>
         <Row className="justify-content-center">
           <Col lg={6} md={8}>
@@ -56,10 +54,10 @@ export default function Scan() {
                 <i className='bi bi-qr-code-scan'></i> Scan
               </Button>
               {scan === 'scan' && (
-                <Card.Body>
-                  <label>
+                <Card.Body >
+                  <label className='camera-box'>
                     Select Camera
-                    <select className="form-select my-3" value={camera} onChange={handleCamera}>
+                    <select className="form-select my-3 camera" value={camera} onChange={handleCamera}>
                       <option value="front">Front Camera</option>
                       <option value="rear">Rear Camera</option>
                     </select>
