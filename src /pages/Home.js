@@ -1,10 +1,10 @@
 import { Container,Row,Col } from 'react-bootstrap'
 
 //pages
-import HomeIllust from './HomeIllust.jpg'
-import stepOne from './stepOne.png'
-import stepTwo from './stepTwo.png'
-import stepThree from './stepThree.png'
+import HomeIllust from '../assets/HomeIllust.jpg'
+import stepOne from '../assets/stepOne.png'
+import stepTwo from '../assets/stepTwo.png'
+import stepThree from '../assets/stepThree.png'
 //components
 import Scan from '../components/Scan'
 
@@ -20,7 +20,7 @@ function Home() {
        <p> Scan QR Codes from your bills to quickly extract essential informations.</p>
        <div>
         <br></br>
-       <h5 className='mt-4 pb-2'>Just follow these 3 simple steps:</h5>
+       <h5 className='mt-3 pb-2'>Just follow these 3 simple steps:</h5>
       <p>Click on the "Scan" button below.</p>
       <img className='icon-small pb-2' src={stepOne} alt='step one' />
       <p>Use your device camera to scan the QR code.</p>
